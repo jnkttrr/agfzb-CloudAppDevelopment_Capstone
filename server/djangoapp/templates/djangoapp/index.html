@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Dealership Review</title>
@@ -14,10 +15,26 @@
 </head>
 
     <body>
-    <!-- Remove this line the first time you edit this file -->
-     This is the index page of your Django app!
+        <center><h1>Best Car DealerShip Website</h1></center>
+        <p></p>
     <!--Add a nav bar here -->
-
+    <body class="text-center">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'djangoapp:index' %}">BestCar Dealership</a>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul style="justify-content:left;" class="navbar-nav">
+                        <li class="navbar-brand">
+                            <a class="nav-link" href="{% url 'djangoapp:about' %}">About Us</a>
+                        </li>
+                        <li class="navbar-brand">
+                            <a class="nav-link" href="{% url 'djangoapp:contact' %}">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     <!--Add a dealer table here -->
 
     </body>
